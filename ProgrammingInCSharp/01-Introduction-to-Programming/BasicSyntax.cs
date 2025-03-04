@@ -1,4 +1,5 @@
 using System;
+using System.Numerics;
 
 namespace IntroductionToProgramming
 {
@@ -7,19 +8,19 @@ namespace IntroductionToProgramming
         public static void RunExample()
         {
             // 1. Variables and Data Types
-            VariableExamples();
+            // VariableExamples();
 
             // 2. Basic Arithmetic Operations
-            ArithmeticOperations();
+            // ArithmeticOperations();
 
             // 3. Console Input/Output Example
             InputOutputExample();
 
             // 4. Simple Method Creation and Usage
             int sum = AddNumbers(5, 3);
-            Console.WriteLine($"Method Example: Sum of 5 and 3 is {sum}");
+            //Console.WriteLine($"Method Example: Sum of 5 and 3 is {sum}");
 
-            Console.WriteLine("\n-- Basic Syntax Examples Completed --");
+            //Console.WriteLine("\n-- Basic Syntax Examples Completed --");
         }
 
         // 1. Variables and Data Types Example
@@ -33,6 +34,7 @@ namespace IntroductionToProgramming
             char singleCharacter = 'A';        // Character
             string text = "Hello, C#";         // String
             bool isProgrammingFun = true;      // Boolean (true/false)
+            decimal Amount = 2003.45M; // Decimal
 
             // Print variable values
             Console.WriteLine($"Integer: {integer}");
@@ -40,6 +42,7 @@ namespace IntroductionToProgramming
             Console.WriteLine($"Character: {singleCharacter}");
             Console.WriteLine($"String: {text}");
             Console.WriteLine($"Boolean: {isProgrammingFun}");
+            Console.WriteLine($"Decimal: {Amount}");
         }
 
         // 2. Basic Arithmetic Operations Example
@@ -48,7 +51,7 @@ namespace IntroductionToProgramming
             Console.WriteLine("\n-- Arithmetic Operations --");
 
             int a = 10;
-            int b = 3;
+            int b = 7;
 
             // Perform arithmetic operations and print results
             Console.WriteLine($"Addition: {a} + {b} = {a + b}");
@@ -56,6 +59,7 @@ namespace IntroductionToProgramming
             Console.WriteLine($"Multiplication: {a} * {b} = {a * b}");
             Console.WriteLine($"Division: {a} / {b} = {a / b}");      // Integer division
             Console.WriteLine($"Modulus: {a} % {b} = {a % b}");        // Remainder of division
+            Console.WriteLine($"OR: {a} | {b} = {a | b}");
         }
 
         // 3. Console Input/Output Example
@@ -67,6 +71,13 @@ namespace IntroductionToProgramming
             Console.Write("Enter your name: ");
             string name = Console.ReadLine();
             Console.WriteLine($"Hello, {name}!");
+            Console.Write("Enter your Group Name: ");
+            string GrpName = Console.ReadLine();
+            Console.WriteLine($"Group, {GrpName}");
+            Console.Write("Enter your ID Number: ");
+            int i = int.Parse(Console.ReadLine());
+            Console.WriteLine($"ID: {i}");
+            
         }
 
         // 4. Simple Method Example: Adding two numbers
